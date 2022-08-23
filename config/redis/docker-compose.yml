@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  redis:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        - REDIS_VERSION
+    ports:
+      - 6379:6379
+    volumes:
+      - ../../data/redis:/data
+    networks:
+      - local
+
+networks:
+  local:
+    name: local

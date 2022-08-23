@@ -1,0 +1,13 @@
+# REDIS 도커 컴포즈 세팅
+
+## 아래 값으로 .env 파일을 생성하세요.
+
+```
+REDIS_VERSION=
+```
+
+## docker-compose 명령어 실행
+
+```bash
+docker-compose up -d
+```
